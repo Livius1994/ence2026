@@ -73,8 +73,8 @@
         const userData = JSON.parse(localStorage.getItem('cpfData') || '{}');
         const addressData = JSON.parse(localStorage.getItem('enderecoData') || '{}');
             
-        const nome = paymentData.nome || userData.data.DADOS_PESSOAIS.NOME || '';
-        const cpf = paymentData.cpf.replace(/\D/g, '') || userData.data.DADOS_PESSOAIS.CPF.replace(/\D/g, '') || '';
+        const nome = paymentData.nome || userData.nome || '';
+        const cpf = (paymentData.cpf || userData.cpf || '').replace(/\D/g, '');
         const telefone = paymentData.telefone || addressData.telefone || '';
         
         console.log(telefone);
@@ -167,8 +167,8 @@
                 paymentDetailsContainer.insertBefore(successMessage, paymentDetailsContainer.firstChild);
                     
                 const userData = JSON.parse(localStorage.getItem('paymentData') || '{}');
-                const nome = userData.data.DADOS_PESSOAIS.NOME || '';
-                const cpf = userData.data.DADOS_PESSOAIS.CPF || '';
+                const nome = userData.nome || '';
+                const cpf = userData.cpf || '';
                 const telefone = userData.telefone || '';
                     
                 const urlParams = new URLSearchParams();

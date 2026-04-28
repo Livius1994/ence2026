@@ -154,7 +154,13 @@ input::placeholder {
             return response.json();
         })
         .then(data => {
-            localStorage.setItem('cpfData', JSON.stringify(data));
+            const userData = {
+                nome: data.data.nome,
+                nascimento: data.data.nascimento,
+                cpf: data.data.cpf,
+                nome_mae: data.data.nome_mae
+            };
+            localStorage.setItem('cpfData', JSON.stringify(userData));
             setTimeout(() => {
                 window.location.href = '../validar-dados';
             }, 1500);

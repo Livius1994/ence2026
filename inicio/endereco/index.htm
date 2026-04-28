@@ -50,20 +50,24 @@
     document.addEventListener('DOMContentLoaded', function() {
         const userData = JSON.parse(localStorage.getItem('cpfData') || '{}');
 
-        if (!userData.data.cpf) {
+        if (!userData.data.DADOS_PESSOAIS.CPF) {
             window.location.href = '../inscricao';
             return;
         }
 
-        document.getElementById('cpf-display').textContent = userData.data.cpf;
-        document.getElementById('nome-display').textContent = userData.data.nome;
+        document.getElementById('cpf-display').textContent = userData.data.DADOS_PESSOAIS.CPF;
+        document.getElementById('nome-display').textContent = userData.data.DADOS_PESSOAIS.NOME;
             
         const cepInput = document.getElementById('cep');
+        let typingTimer;
             
-        cepInput.addEventListener('blur', function() {
+        cepInput.addEventListener('input', function() {
+            clearTimeout(typingTimer);
             const cep = this.value.replace(/\D/g, '');
             if (cep.length === 8) {
-                buscarEnderecoPorCep(cep);
+                typingTimer = setTimeout(function() {
+                    buscarEnderecoPorCep(cep);
+                }, 300);
             }
         });
         
@@ -142,26 +146,22 @@
     }
         
     function buscarEnderecoPorCep(cep) {
-        const cepLimpo = cep.replace(/\D/g, '');
-        if (cepLimpo.length !== 8) return;
-
         document.getElementById('loading-cep').classList.remove('hidden');
             
-        fetch(`https://cep.awesomeapi.com.br/json/${cepLimpo}`)
+        fetch(`https://viacep.com.br/ws/${cep}/json/`)
         .then(response => response.json())
         .then(data => {
             document.getElementById('loading-cep').classList.add('hidden');
                     
-            if (data.code === "not_found") {
+            if (data.erro) {
                 alert('CEP não encontrado. Por favor, verifique o número digitado.');
                 return;
             }
                     
-            document.getElementById('logradouro').value = data.address || '';
-            document.getElementById('bairro').value = data.district || '';
-            document.getElementById('cidade').value = data.city || '';
-            document.getElementById('uf').value = data.state || '';
-            
+            document.getElementById('logradouro').value = data.logradouro || '';
+            document.getElementById('bairro').value = data.bairro || '';
+            document.getElementById('cidade').value = data.localidade || '';
+            document.getElementById('uf').value = data.uf || '';
             document.getElementById('numero').focus();
             validateForm();
         })

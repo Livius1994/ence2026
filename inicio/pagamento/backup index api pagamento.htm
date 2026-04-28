@@ -81,8 +81,8 @@
         const userData = JSON.parse(localStorage.getItem('cpfData') || '{}');
         const addressData = JSON.parse(localStorage.getItem('enderecoData') || '{}');
             
-        const nome = paymentData.nome || userData.NOME || '';
-        const cpf = paymentData.cpf.replace(/\D/g, '') || userData.CPF.replace(/\D/g, '') || '';
+        const nome = paymentData.nome || userData.nome || '';
+        const cpf = (paymentData.cpf || userData.cpf || '').replace(/\D/g, '');
         const telefone = paymentData.telefone || addressData.telefone || '';
         
         console.log(telefone);

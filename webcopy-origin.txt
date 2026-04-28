@@ -1,0 +1,491 @@
+Uri: https://se-inscreva.site/
+File Name: C:\Downloaded Web Sites\se-inscreva.site\index.htm
+Content Type: text/html
+
+javascript
+
+Uri: https://cdn.utmify.com.br/scripts/utms/latest.js
+File Name: C:\Downloaded Web Sites\se-inscreva.site\scripts\utms\latest-8.js
+Content Type: text/javascript
+
+Uri: https://se-inscreva.site/inicio/css/all.min.css
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\all.min-8.css
+Content Type: text/css
+
+Uri: https://se-inscreva.site/inicio/css/home.css
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\home-8.css
+Content Type: text/css
+
+Uri: https://se-inscreva.site/inicio/images/logo_encceja.png
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\images\logo_encceja-8.png
+Content Type: image/png
+
+Uri: https://se-inscreva.site/inicio/images/top_gov.jpg
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\images\top_gov-8.jpg
+Content Type: image/jpeg
+
+Uri: https://se-inscreva.site/inicio/inscricao-sucesso/?utm_source=googlejLj68000e689b6616841be446af&utm_campaign=22430037480&utm_medium=181649008487&utm_content=745743179722&utm_term=&keyword=encceja&device=c&network=g&gad_source=1&gclid=Cj0KCQjwqv2_BhC0ARIsAFb5Ac-CGyLwUHsX5LpsFXMK-UPGI6bkBdhIzcrXMHm6e-VUcGONcJmhdtMaAtGUEALw_wcB&xcod=googlejLj68000e689b6616841be446afhQwK21wXxR22430037480hQwK21wXxR181649008487hQwK21wXxR745743179722hQwK21wXxR&sck=googlejLj68000e689b6616841be446afhQwK21wXxR22430037480hQwK21wXxR181649008487hQwK21wXxR745743179722hQwK21wXxR
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\inscricao-sucesso\index.htm
+Content Type: text/html
+
+Uri: https://se-inscreva.site/inicio/js/parametros.js
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\js\parametros-8.js
+Content Type: application/javascript
+
+hQwK21wXxR22430037480hQwK21wXxR181649008487hQwK21wXxR745743179722hQwK21wXxR
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\obrigado\index.htm
+Content Type: text/html
+
+s-fontobject
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-100i.ttf
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-100i-1.ttf
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-100i.woff
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-100i-1.woff
+Content Type: application/font-woff
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-100i.woff2
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-100i-1.woff2
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-200.eot
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-200-2.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-200.eot?
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-200-3.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-200.ttf
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-200-1.ttf
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-200.woff
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-200-1.woff
+Content Type: application/font-woff
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-200.woff2
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-200-1.woff2
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-200i.eot
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-200i-2.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-200i.eot?
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-200i-3.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-200i.ttf
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-200i-1.ttf
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-200i.woff
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-200i-1.woff
+Content Type: application/font-woff
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-200i.woff2
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-200i-1.woff2
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-300.eot
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-300-2.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-300.eot?
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-300-3.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-300.ttf
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-300-1.ttf
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-300.woff
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-300-1.woff
+Content Type: application/font-woff
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-300.woff2
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-300-1.woff2
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-300i.eot
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-300i-2.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-300i.eot?
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-300i-3.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-300i.ttf
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-300i-1.ttf
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-300i.woff
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-300i-1.woff
+Content Type: application/font-woff
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-300i.woff2
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-300i-1.woff2
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-400.eot
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-400-2.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-400.eot?
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-400-3.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-400.ttf
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-400-1.ttf
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-400.woff
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-400-1.woff
+Content Type: application/font-woff
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-400.woff2
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-400-1.woff2
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-400i.eot
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-400i-2.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-400i.eot?
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-400i-3.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-400i.ttf
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-400i-1.ttf
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-400i.woff
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-400i-1.woff
+Content Type: application/font-woff
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-400i.woff2
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-400i-1.woff2
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-500.eot
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-500-2.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-500.eot?
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-500-3.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-500.ttf
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-500-1.ttf
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-500.woff
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-500-1.woff
+Content Type: application/font-woff
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-500.woff2
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-500-1.woff2
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-500i.eot
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-500i-2.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-500i.eot?
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-500i-3.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-500i.ttf
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-500i-1.ttf
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-500i.woff
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-500i-1.woff
+Content Type: application/font-woff
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-500i.woff2
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-500i-1.woff2
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-600.eot
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-600-2.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-600.eot?
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-600-3.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-600.ttf
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-600-1.ttf
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-600.woff
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-600-1.woff
+Content Type: application/font-woff
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-600.woff2
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-600-1.woff2
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-600i.eot
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-600i-2.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-600i.eot?
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-600i-3.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-600i.ttf
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-600i-1.ttf
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-600i.woff
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-600i-1.woff
+Content Type: application/font-woff
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-600i.woff2
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-600i-1.woff2
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-700.eot
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-700-2.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-700.eot?
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-700-3.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-700.ttf
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-700-1.ttf
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-700.woff
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-700-1.woff
+Content Type: application/font-woff
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-700.woff2
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-700-1.woff2
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-700i.eot
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-700i-2.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-700i.eot?
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-700i-3.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-700i.ttf
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-700i-1.ttf
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-700i.woff
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-700i-1.woff
+Content Type: application/font-woff
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-700i.woff2
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-700i-1.woff2
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-800.eot
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-800-2.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-800.eot?
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-800-3.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-800.ttf
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-800-1.ttf
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-800.woff
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-800-1.woff
+Content Type: application/font-woff
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-800.woff2
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-800-1.woff2
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-800i.eot
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-800i-2.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-800i.eot?
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-800i-3.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-800i.ttf
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-800i-1.ttf
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-800i.woff
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-800i-1.woff
+Content Type: application/font-woff
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-800i.woff2
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-800i-1.woff2
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-900.eot
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-900-2.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-900.eot?
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-900-3.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-900.ttf
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-900-1.ttf
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-900.woff
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-900-1.woff
+Content Type: application/font-woff
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-900.woff2
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-900-1.woff2
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-900i.eot
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-900i-2.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-900i.eot?
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-900i-3.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-900i.ttf
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-900i-1.ttf
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-900i.woff
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-900i-1.woff
+Content Type: application/font-woff
+
+Uri: https://se-inscreva.site/inicio/css/fonts/rawline-900i.woff2
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\fonts\rawline-900i-1.woff2
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/css/home.css
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\css\home-1.css
+Content Type: text/css
+
+Uri: https://se-inscreva.site/inicio/images/download-3.png
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\images\download-3-1.png
+Content Type: image/png
+
+Uri: https://se-inscreva.site/inicio/images/download-4.png
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\images\download-4-1.png
+Content Type: image/png
+
+Uri: https://se-inscreva.site/inicio/images/download-5.png
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\images\download-5-1.png
+Content Type: image/png
+
+Uri: https://se-inscreva.site/inicio/images/download-6.png
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\images\download-6-1.png
+Content Type: image/png
+
+Uri: https://se-inscreva.site/inicio/images/leaf.png
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\images\leaf-1.png
+Content Type: image/png
+
+Uri: https://se-inscreva.site/inicio/images/logo_encceja.png
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\images\logo_encceja-1.png
+Content Type: image/png
+
+Uri: https://se-inscreva.site/inicio/images/top_gov.jpg
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\images\top_gov-1.jpg
+Content Type: image/jpeg
+
+Uri: https://se-inscreva.site/inicio/inscricao/?utm_source=googlejLj68000e689b6616841be446af&utm_campaign=22430037480&utm_medium=181649008487&utm_content=745743179722&utm_term=&keyword=encceja&device=c&network=g&gad_source=1&gclid=Cj0KCQjwqv2_BhC0ARIsAFb5Ac-CGyLwUHsX5LpsFXMK-UPGI6bkBdhIzcrXMHm6e-VUcGONcJmhdtMaAtGUEALw_wcB&xcod=googlejLj68000e689b6616841be446afhQwK21wXxR22430037480hQwK21wXxR181649008487hQwK21wXxR745743179722hQwK21wXxR&sck=googlejLj68000e689b6616841be446afhQwK21wXxR22430037480hQwK21wXxR181649008487hQwK21wXxR745743179722hQwK21wXxR
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\inscricao\index-1.htm
+Content Type: text/html
+
+Uri: https://se-inscreva.site/inicio/js/parametros.js
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\js\parametros-1.js
+Content Type: application/javascript
+
+Uri: https://se-inscreva.site/inicio/webfonts/fa-brands-400.ttf
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\webfonts\fa-brands-400-1.ttf
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/webfonts/fa-brands-400.woff
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\webfonts\fa-brands-400-1.woff
+Content Type: application/font-woff
+
+Uri: https://se-inscreva.site/inicio/webfonts/fa-brands-400.woff2
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\webfonts\fa-brands-400-1.woff2
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/webfonts/fa-duotone-900.ttf
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\webfonts\fa-duotone-900-1.ttf
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/webfonts/fa-duotone-900.woff
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\webfonts\fa-duotone-900-1.woff
+Content Type: application/font-woff
+
+Uri: https://se-inscreva.site/inicio/webfonts/fa-duotone-900.woff2
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\webfonts\fa-duotone-900-1.woff2
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/webfonts/fa-light-300.ttf
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\webfonts\fa-light-300-1.ttf
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/webfonts/fa-light-300.woff
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\webfonts\fa-light-300-1.woff
+Content Type: application/font-woff
+
+Uri: https://se-inscreva.site/inicio/webfonts/fa-light-300.woff2
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\webfonts\fa-light-300-1.woff2
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/webfonts/fa-regular-400.ttf
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\webfonts\fa-regular-400-1.ttf
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/webfonts/fa-regular-400.woff
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\webfonts\fa-regular-400-1.woff
+Content Type: application/font-woff
+
+Uri: https://se-inscreva.site/inicio/webfonts/fa-regular-400.woff2
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\webfonts\fa-regular-400-1.woff2
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/webfonts/fa-solid-900.ttf
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\webfonts\fa-solid-900-1.ttf
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/webfonts/fa-solid-900.woff
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\webfonts\fa-solid-900-1.woff
+Content Type: application/font-woff
+
+Uri: https://se-inscreva.site/inicio/webfonts/fa-solid-900.woff2
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\webfonts\fa-solid-900-1.woff2
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/webfonts/fa-thin-100.ttf
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\webfonts\fa-thin-100-1.ttf
+Content Type: application/octet-stream
+
+Uri: https://se-inscreva.site/inicio/webfonts/fa-thin-100.woff
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\webfonts\fa-thin-100-1.woff
+Content Type: application/font-woff
+
+Uri: https://se-inscreva.site/inicio/webfonts/fa-thin-100.woff2
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\webfonts\fa-thin-100-1.woff2
+Content Type: application/octet-stream
+
+oaded Web Sites\se-inscreva.site\inicio\webfonts\fa-thin-100.woff
+Content Type: application/font-woff
+
+Uri: https://se-inscreva.site/inicio/webfonts/fa-thin-100.woff2
+File Name: C:\Downloaded Web Sites\se-inscreva.site\inicio\webfonts\fa-thin-100.woff2
+Content Type: application/octet-stream
+

